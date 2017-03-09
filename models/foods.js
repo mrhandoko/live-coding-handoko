@@ -1,6 +1,6 @@
 var mongoose = require('mongoose')
 
-var foodSchema = mongoose.schema({
+var foodSchema = mongoose.Schema({
   name: String,
   price: Number,
   expired_date: Date

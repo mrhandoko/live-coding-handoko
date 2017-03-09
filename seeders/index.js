@@ -12,6 +12,11 @@ module.exports = {
         open_status: true
       })
     }
+    Model.Restaurant.create(arrRestaurants).then((data) => {
+      res.send(data)
+    }).catch((err) => {
+      console.log(err)
+    })
   },
   seedFoods: (req, res, next) => {
     let arrFoods = []
@@ -19,8 +24,13 @@ module.exports = {
       arrFoods.push({
         name: 'Sate Padang',
         price: 12000,
-        expired_date: Date
+        expired_date: new Date()
       })
     }
+    Model.Food.create(arrFoods).then((data) => {
+      res.send(data)
+    }).catch((err) => {
+      console.log(err)
+    })
   }
 }
