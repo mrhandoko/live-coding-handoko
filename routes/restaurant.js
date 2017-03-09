@@ -1,12 +1,12 @@
 var express = require('express')
 var router = express.Router()
-var Controller = require('../controllers')
+var Controller = require('../controllers/restaurant')
 
 // All About Restaurants
-router.get('/getrestaurants', Controller.getRestaurants)
-router.get('/getrestaurant/:id', Controller.getRestaurant)
-router.post('/newrestaurant', Controller.createRestaurant)
-router.put('/updaterestaurant/:id', Controller.updateRestaurant)
-router.delete('removerestaurant/:id', Controller.removeRestaurant)
+router.get('/restaurants', Controller.getRestaurants)
+router.get('/restaurant/:id', Controller.getRestaurant)
+router.post('/restaurant', Controller.createRestaurant)
+router.put('/restaurants/:id', Controller.updateRestaurant)
+router.delete('restaurant/:id', Controller.removeRestaurant)
 
 module.exports = router

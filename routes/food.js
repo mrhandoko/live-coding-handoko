@@ -1,6 +1,6 @@
 var express = require('express')
 var router = express.Router()
-var Controller = require('../controllers')
+var Controller = require('../controllers/food')
 
 // All About Foods
 router.get('/foods', Controller.getFoods)
