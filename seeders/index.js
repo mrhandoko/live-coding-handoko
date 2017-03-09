@@ -17,8 +17,8 @@ module.exports = {
     let arrFoods = []
     for (var i = 0; i <= 10; i++) {
       arrFoods.push({
-        name: String,
-        price: Number,
+        name: 'Sate Padang',
+        price: 12000,
         expired_date: Date
       })
     }
