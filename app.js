@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use('/', index)
-app.use('/restaurant', restaurants)
-app.use('/food', foods)
+app.use('/api/restaurant', restaurants)
+app.use('/api/food', foods)
 
 module.exports = app
