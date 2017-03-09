@@ -9,16 +9,16 @@ router.get('/seedfoods', Seeder.seedFoods)
 
 // All About Foods
 router.get('/getfoods', Controller.getFoods)
-router.get('/getfood', Controller.getFood)
+router.get('/getfood/:name', Controller.getFood)
 router.post('/newfood', Controller.createFood)
-router.put('/updatefood', Controller.updateFood)
-router.delete('removefood', Controller.removeFood)
+router.put('/updatefood/:id', Controller.updateFood)
+router.delete('removefood/:id', Controller.removeFood)
 
 // All About Restaurants
 router.get('/getrestaurants', Controller.getRestaurants)
-router.get('/getrestaurant', Controller.getRestaurant)
+router.get('/getrestaurant/:id', Controller.getRestaurant)
 router.post('/newrestaurant', Controller.createRestaurant)
-router.put('/updaterestaurant', Controller.updateRestaurant)
-router.delete('removerestaurant', Controller.removeRestaurant)
+router.put('/updaterestaurant/:id', Controller.updateRestaurant)
+router.delete('removerestaurant/:id', Controller.removeRestaurant)
 
 module.exports = router
