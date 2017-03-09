@@ -18,21 +18,21 @@ Repo ini merupakan live coding  REST API CRUD sederhana dengan menggunakan frame
 
 Route | HTTP | Description
 ------|------|------------
-api/foods|GET|Get all the users
-api/food/:id|GET|Get a single users
-api/food|POST|Create a users
-api/food/:id|DELETE|Delete a users
-api/food/:id|PUT|Update a user with new info
+food/all|GET|Get all the users
+food/:id|GET|Get a single users
+food/new|POST|Create a users
+food/:id|DELETE|Delete a users
+food/:id|PUT|Update a user with new info
 
 List of Restaurants routes:
 
 Route | HTTP | Description
 ------|------|------------
-api/restaurants|GET|Get all the users
-api/restaurant/:id|GET|Get a single users
-api/restaurant|POST|Create a users
-api/restaurant/:id|DELETE|Delete a users
-api/restaurant/:id|PUT|Update a user with new info
+restaurant/all|GET|Get all the users
+restaurant/:id|GET|Get a single users
+restaurant/new|POST|Create a users
+restaurant/:id|DELETE|Delete a users
+restaurant/:id|PUT|Update a user with new info
 
 
 
